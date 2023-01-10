@@ -1,0 +1,8 @@
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\obj\Debug\Inheritence1.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\obj\Debug\Inheritence1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\obj\Debug\Inheritence1.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\bin\Debug\Inheritence1.exe.config
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\bin\Debug\Inheritence1.exe
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\bin\Debug\Inheritence1.pdb
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\obj\Debug\Inheritence1.exe
+C:\Users\Rahul.Yadav\source\repos\Inheritence1\Inheritence1\obj\Debug\Inheritence1.pdb

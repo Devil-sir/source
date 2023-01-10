@@ -1,0 +1,20 @@
+﻿@model ShoesApp.Models.Product
+
+<table class="table">
+    <tbody>
+        <td>
+            @Html.HiddenFor(e=>e.categId)
+            @Html.HiddenFor(e => e.id)
+            @Html.DisplayFor(e => e.name)
+            @Html.HiddenFor(e => e.name)
+        </td>
+        <td>
+            @Html.HiddenFor(e=>e.price)
+            @Html.DisplayFor(e=>e.price)
+        </td>
+        <td>
+            @Html.TextBoxFor(e => e.qty)
+        </td>
+        <td>@Html.CheckBoxFor(e => e.check)</td>
+    </tbody>
+</table>

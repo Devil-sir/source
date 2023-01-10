@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ShoesApp.Models.Product>
+
+@{
+    ViewBag.Title = "Select Product";
+}
+
+<h2>SelectedProduct</h2>
+
+@using (@Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-md-4">
+            <table class="table">
+                <thead>
+                    <th>@Html.DisplayNameFor(e=>e.name)</th>
+                    <th>@Html.DisplayNameFor(e=>e.price)</th>
+                    <th>@Html.DisplayNameFor(e=>e.qty)</th>
+                    <th>Select Product</th>
+                </thead>
+                <tbody>
+                    @Html.EditorForModel()
+                </tbody>
+            </table>
+        </div>
+        <input type="submit" value="Add to Cart" class="btn btn-primary" />
+
+    </div>
+}
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "SelectCategory","Categories",new{@class = "btn btn-secondary"})
+</div>

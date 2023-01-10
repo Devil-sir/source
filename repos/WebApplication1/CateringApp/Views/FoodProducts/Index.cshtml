@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CateringApp.Models.FoodProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create", "Create", null, new {@class = "btn btn-success"})
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductId)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FPCategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductPhotoPath)
+        </th>
+        <th>Actions</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodProductId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FPCategoryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodProductDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodProductPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodProductPhotoPath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "UpdateData", new { id = item.FoodProductId }, new {@class ="btn btn-primary"}) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.FoodProductId }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

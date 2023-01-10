@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model IEnumerable<ShoesApp.Models.Sale>
+@{
+    ViewData["Title"] = "SaleAmt";
+}
+
+<h1>SaleAmt</h1>
+<form method="post">
+    <input type="month" name="saleMonth" />
+    <br />
+
+    <input type="submit" value="Submit" />
+</form>
+<p>Total Amount Of Sale In Months : @HttpContextAccessor.HttpContext.Session.GetString("_Cost")</p>
+        

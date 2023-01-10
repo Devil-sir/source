@@ -1,0 +1,58 @@
+﻿@model DAL.Models.FoodProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FoodProduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categ.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categ.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodProductDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodProductDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodProductPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodProductPhotoPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodProductPhotoPath)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FoodProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

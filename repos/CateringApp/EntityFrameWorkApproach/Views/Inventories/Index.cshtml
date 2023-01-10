@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DAL.Models.Inventory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.categ.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fp.FoodProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.qty)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.categ.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fp.FoodProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.qty)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InventoryId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InventoryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InventoryId })
+        </td>
+    </tr>
+}
+
+</table>

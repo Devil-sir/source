@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MVCExample.Models.Patient>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Database Connectivity</h1><br />
+
+<h2>Patient Index</h2>
+
+<div>
+    <hr />
+        @Html.ActionLink("Create New", "Create",null, new {@class = "btn btn-secondary" })
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <!-- <th>@Html.DisplayNameFor(e=>e.Id)</th> -->
+            <th>Name</th>
+            <th>Age</th>
+            <th>Action</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(e => item.Id)</td>
+                <td>@Html.DisplayFor(e => item.Name)</td>
+                <td>@Html.DisplayFor(e => item.Age)</td>
+                <td>
+                    @Html.ActionLink("Update", "UpdateData", new { id = item.Id }, new {@class = "btn btn-primary"})
+                    @Html.ActionLink("Delete", "DeleteData", new { id = item.Id }, new {@class= "btn btn-danger"})
+                </td>
+
+            </tr>
+        }
+    </table>
+</div>

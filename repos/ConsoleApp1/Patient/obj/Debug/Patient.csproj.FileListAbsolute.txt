@@ -1,0 +1,11 @@
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\bin\Debug\Patient.exe.config
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\bin\Debug\Patient.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\bin\Debug\Patient.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\bin\Debug\DAL.dll
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\bin\Debug\DAL.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.csproj.CopyComplete
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Patient\obj\Debug\Patient.pdb

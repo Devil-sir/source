@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ShoesApp.Models.ProductsSold>
+
+@{
+    ViewData["Title"] = "CountOfSaleInCurrentMonth";
+}
+
+<h1>CountOfSaleInCurrentMonth</h1>
+
+<form method="post">
+    <input type="month" name="saleMonth" />
+    <br />
+
+    <input type="submit" value="Submit" />
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.product)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.sale)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.qty)
+            </th>
+            @*<th></th>*@
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.product.name)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.sale.id)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.qty)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model DAL.Models.Inventory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inventory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categ.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categ.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fp.FoodProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fp.FoodProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qty)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InventoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

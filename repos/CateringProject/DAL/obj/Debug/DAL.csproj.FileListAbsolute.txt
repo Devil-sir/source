@@ -1,0 +1,2 @@
+C:\Users\Rahul.Yadav\source\repos\CateringProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\CateringProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache

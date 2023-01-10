@@ -1,0 +1,8 @@
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\bin\Debug\AssignmentMonday.exe.config
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\bin\Debug\AssignmentMonday.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\bin\Debug\AssignmentMonday.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\obj\Debug\AssignmentMonday.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\obj\Debug\AssignmentMonday.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\obj\Debug\AssignmentMonday.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\obj\Debug\AssignmentMonday.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\AssignmentMonday\obj\Debug\AssignmentMonday.pdb

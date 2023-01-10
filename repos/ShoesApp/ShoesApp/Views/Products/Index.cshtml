@@ -1,0 +1,201 @@
+﻿@model IEnumerable<ShoesApp.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.categ)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imgPath)
+            </th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categ.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.imgPath)
+                <img src="@item.imgPath" class="rounded-circle" width="60" height="60" />
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+@*<div class="bg-gradient" style="margin:auto;">
+    @foreach (var item in Model)
+    {
+        <div class="card overflow-hidden" style="width: 31%; margin:10px; display: flex; float:left; height:25rem;">
+            <img src="@item.imgPath" />
+            <div class="card-body">
+                <h5 class="card-title">
+                    @Html.DisplayFor(modelItem => item.name)
+                </h5>
+                <h6>
+                    @Html.DisplayFor(modelItem => item.categ.name)
+                </h6>
+                <h6>
+                    @Html.DisplayFor(modelItem => item.price)
+                </h6>
+                <p class="card-text">
+                    @Html.DisplayFor(modelItem => item.description)
+                </p>
+
+                <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning"><img src="~/Images/edit.png" alt="Edit" /></a>
+                
+                <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger"><img src="~/Images/delete.png" alt="Delete"/></a>
+            </div>
+        </div>
+    }
+</div>*@
+<style>
+    * {/*
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;*/
+        font-familly: "Poppins", sans-serif;
+    }
+
+    /*body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #43345d;
+        min-height: 800px;
+    }*/
+
+    .container {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        float:left;
+        align-items: center;
+        justify-content: center;
+        flex-warp: warp;
+        padding: 30px;
+    }
+
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background-color: #fff;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+            .container .card:hover {
+                height: 500px;
+            }
+
+
+            .container .card .image {
+                position: relative;
+                width: 260px;
+                height: 260px;
+                top: -40%;
+                left: 8px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+                .container .card .image img {
+                    max-width: 100%;
+                    border-radius: 15px;
+                }
+
+            .container .card .content {
+                position: relative;
+                top: -140px;
+                padding: 10px 15px;
+                color: #111;
+                text-align: center;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+            }
+
+            .container .card:hover .content {
+                margin-top: 30px;
+                visibility: visible;
+                opacity: 1;
+                transition-delay: 0.2s;
+            }
+</style>
+<body>
+       @foreach (var item in Model)
+    {
+    <div class=container>
+     
+        <div class=card>
+            <div class=image>
+                <img src="@item.imgPath" />
+            </div>
+            <div class=content>
+                <h3>
+                    @Html.DisplayFor(modelItem => item.name)
+                </h3>
+                <h6>
+                    @Html.DisplayFor(modelItem => item.categ.name)
+                </h6>
+                <h5>
+                    Price:
+                    @Html.DisplayFor(modelItem => item.price)
+                </h5>
+                <p>
+                    @Html.DisplayFor(modelItem => item.description)
+                </p>
+                <p>
+                    <a asp-action="Edit" asp-route-id="@item.id" ><img src="~/Images/edit.png" alt="Edit" width="20"/></a>
+                    <a asp-action="Delete" asp-route-id="@item.id" ><img src="~/Images/delete.png" alt="Delete" width="20"/></a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    }
+</body>
+<a asp-action="Index" asp-controller="Home" class="btn btn-dark">Back to Home</a>

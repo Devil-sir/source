@@ -1,0 +1,8 @@
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\bin\Debug\DbConnection.exe.config
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\bin\Debug\DbConnection.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\bin\Debug\DbConnection.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\obj\Debug\DbConnection.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\obj\Debug\DbConnection.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\obj\Debug\DbConnection.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\obj\Debug\DbConnection.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\DbConnection\obj\Debug\DbConnection.pdb

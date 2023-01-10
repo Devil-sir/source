@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ShoesApp.Models.Cart>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.categ.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.product.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.product.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.qty)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categ.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.product.name)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.product.price)
+            </td>
+            <td>
+                <a asp-action="Decrement" asp-route-id="@item.id">subtract</a>
+                @Html.DisplayFor(modelItem => item.qty)
+                <a asp-action="Increment" asp-route-id="@item.id">Add</a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+    <td>
+        Total Amount :  @ViewBag.TotalAmt
+    </td>
+</table>
+<p>
+    @Html.ActionLink("Checkout", "Checkout")
+</p>
+<p>
+    @Html.ActionLink("Empty Cart", "EmptyCart")
+</p>
+

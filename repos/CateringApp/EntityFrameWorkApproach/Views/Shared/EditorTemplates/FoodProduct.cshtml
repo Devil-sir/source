@@ -1,0 +1,20 @@
+﻿@model  DAL.Models.FoodProduct
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.HiddenFor(e => e.FoodProductId)
+            @Html.DisplayFor(e => e.FoodProductName)
+            @Html.HiddenFor(e => e.FoodProductName)
+        </td>
+        <td>
+            @Html.HiddenFor(e=>e.FoodProductPrice)
+            @Html.DisplayFor(e=>e.FoodProductPrice)
+        </td>
+        <td>
+            @Html.TextBoxFor(e => e.Qty)
+        </td>
+    <td>@Html.CheckBoxFor(e => e.check)</td>
+    </tr>
+</table>
+

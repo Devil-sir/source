@@ -1,0 +1,60 @@
+﻿@model IEnumerable<DAL.Models.FoodProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.categ.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodProductPhotoPath)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categ.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodProductDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodProductPrice)
+            </td>
+            <td>
+               <img src="@Url.Content(item.FoodProductPhotoPath)" width="50px" />
+                @*@Html.DisplayFor(modelItem => item.FoodProductPhotoPath)*@
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.FoodProductId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.FoodProductId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.FoodProductId })
+            </td>
+        </tr>
+    }
+
+</table>

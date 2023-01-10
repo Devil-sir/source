@@ -1,0 +1,37 @@
+﻿@model ShoesApp.Models.Inventory
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(e=>e.categ.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(e => e.product.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(e => e.product.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(e => e.qty)
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.HiddenFor(e=>e.categId)
+            @Html.DisplayFor(e=>e.categ.name)
+        </td>
+        <td>
+            @Html.HiddenFor(e => e.id)
+            @Html.HiddenFor(e=>e.productId)
+            @Html.DisplayFor(e => e.product.name)
+            @Html.HiddenFor(e => e.product.name)
+        </td>
+        <td>
+            @Html.HiddenFor(e=>e.product.price)
+            @Html.DisplayFor(e=>e.product.price)
+        </td>
+        <td>
+            @Html.TextBoxFor(e => e.qty)
+        </td>
+    </tr>
+</table>

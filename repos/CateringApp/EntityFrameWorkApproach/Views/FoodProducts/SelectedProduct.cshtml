@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DAL.Models.FoodProduct>
+
+@{
+    ViewBag.Title = "SelectedProduct";
+}
+
+<h2>SelectedProduct</h2>
+
+@using (@Html.BeginForm()) {
+    <div class="row">
+        <div class="col-md-4">
+            @Html.EditorForModel()
+        </div>
+        <input type="submit" value="submit" class="btn btn-primary" />
+
+    </div>
+ }
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index","Categories")
+</div>

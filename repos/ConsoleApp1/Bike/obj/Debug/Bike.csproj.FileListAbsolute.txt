@@ -1,0 +1,8 @@
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\bin\Debug\Bike.exe.config
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\bin\Debug\Bike.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\bin\Debug\Bike.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\obj\Debug\Bike.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\obj\Debug\Bike.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\obj\Debug\Bike.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\obj\Debug\Bike.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Bike\obj\Debug\Bike.pdb

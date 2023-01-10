@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ShoesApp.Models.Category>
+
+@{
+    ViewData["Title"] = "Category Index";
+    
+}
+<h1 class="text-center">Categories</h1>
+
+<p>
+    <a asp-action="Create"  class="btn btn-success">Create New</a>
+</p>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imgPath)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.imgPath)
+                    <img src="@Url.Content(item.imgPath)" class="rounded-circle" width="60" height="60" />
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger">Delete</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@
+<div class="bg-gradient" style="margin:auto;">
+@foreach(var item in Model){
+    <div class="card overflow-hidden" style="width: 31%; margin:10px; display: flex; float:left;">
+        <img src="@Url.Content(item.imgPath)"/>
+        <div class="card-body" style=" height:20rem;">
+            <h5 class="card-title">
+                @Html.DisplayFor(modelItem => item.name)
+            </h5>
+            <p class="card-text">
+                @Html.DisplayFor(modelItem => item.description)
+            </p>
+
+            <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning">Edit</a>
+            <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary">Details</a>
+            <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+}
+</div>
+<a asp-action="Index" asp-controller="Home" class="btn btn-dark">Back to Home</a>
+

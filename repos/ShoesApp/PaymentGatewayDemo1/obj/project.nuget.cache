@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "soUX7y8MN2oy96/zT8XyKBqctx3TDvZKtZDpXk7R4e8ZfWugxcg5rvTI2/RekAkMq/eEzFRQf1zPPQWPYMIL/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rahul.Yadav\\source\\repos\\ShoesApp\\PaymentGatewayDemo1\\PaymentGatewayDemo1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rahul.Yadav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Rahul.Yadav\\.nuget\\packages\\razorpay.core\\1.0.2\\razorpay.core.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

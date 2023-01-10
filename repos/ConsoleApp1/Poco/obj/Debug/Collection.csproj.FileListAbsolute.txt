@@ -1,0 +1,8 @@
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\bin\Debug\Poco.exe.config
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\bin\Debug\Poco.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\bin\Debug\Poco.pdb
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\obj\Debug\Collection.csproj.AssemblyReference.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\obj\Debug\Collection.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\obj\Debug\Collection.csproj.CoreCompileInputs.cache
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\obj\Debug\Poco.exe
+C:\Users\Rahul.Yadav\source\repos\ConsoleApp1\Poco\obj\Debug\Poco.pdb
